@@ -11,7 +11,7 @@ export default function SettingsScreen({ navigation }) {
 				<Text style={{alignSelf:'center', marginTop: '5%', marginLeft: '20%', color: 'white', fontSize: 24}}> Definições </Text>
 			</View>
 
-			<Text style={{color: 'white', fontSize: 20,alignSelf: 'flex-start', marginBottom: 15}}>Opeções de Conteudo</Text>
+			<Text style={{color: 'white', fontSize: 20,alignSelf: 'flex-start', marginBottom: 15}}>Opções de Conteudo</Text>
 
 			<View style={{width: '100%', backgroundColor: '#333'}}>
 			<TouchableOpacity style={{backgroundColor: '#1a1a1a', flexDirection: 'row', paddingHorizontal: 10, paddingVertical: 20}}>
@@ -38,7 +38,7 @@ export default function SettingsScreen({ navigation }) {
 					</View>
 				</TouchableOpacity>
 
-				<Text style={{color: 'white', fontSize: 20,alignSelf: 'flex-start', marginVertical: 15}}>Opeções de Conta</Text>
+				<Text style={{color: 'white', fontSize: 20,alignSelf: 'flex-start', marginVertical: 15}}>Opções de Conta</Text>
 
 				<TouchableOpacity style={{backgroundColor: '#1a1a1a', flexDirection: 'row', paddingHorizontal: 10, paddingVertical: 20}}>
 					<MaterialCommunityIcons name="gift" color={'#737373'} size={24}/>
