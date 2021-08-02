@@ -23,7 +23,7 @@ const Tab = createBottomTabNavigator();
 	return (
 	  <Tab.Navigator initialRouteName="Home" tabBarOptions={{ activeTintColor: '#00ccff', style:{backgroundColor: '#1a1a1a',}}}>
           
-			<Tab.Screen name="Season" component={TemporadaScreen} options={{ tabBarLabel: 'Favorites', tabBarIcon: ({ color, size }) => (<MaterialCommunityIcons name="clock" color={color} size={size}/>),}}/>
+			<Tab.Screen name="Season" component={TemporadaScreen} options={{ tabBarLabel: 'Season', tabBarIcon: ({ color, size }) => (<MaterialCommunityIcons name="clock" color={color} size={size}/>),}}/>
 
 			<Tab.Screen name="Home" component={MainScreen} options={{ tabBarLabel: 'Discover', tabBarIcon: ({ color, size }) => (<MaterialCommunityIcons name="compass" color={color} size={size}/>),}}/>
 

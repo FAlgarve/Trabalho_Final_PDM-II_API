@@ -27,12 +27,10 @@ export default function TemporadaScreen({ navigation }) {
 
 	const renderItem = ({item}) => {
 		return(
-		  <View style={{flexDirection: 'row', flexWrap: 'wrap', paddingHorizontal: 10, paddingVertical: 10, justifyContent: 'space-between', backgroundColor: '#333'}}>
-			  <TouchableOpacity style={{marginBottom: 20, alignItems: 'center', backgroundColor: '#1a1a1a', borderRadius:12, width: 160, height: 180}} onPress={() => navigation.navigate('MangaScreen')}>
-				  <Image style={{width: 100, height: 100, marginTop: '10%', paddingHorizontal: 20}} source = {{uri: (item.image_url)}} />
+			  <TouchableOpacity style={{marginBottom: 20, alignItems: 'center', backgroundColor: '#1a1a1a', borderRadius:12, width: 160, height: 180, marginHorizontal: '3%'}} onPress={() => navigation.navigate('MangaScreen')}>
+				  <Image style={{width: 100, height: 100, marginTop: '10%', paddingHorizontal: 20, borderRadius: 5}} source = {{uri: (item.image_url)}} />
 				  <Text style={{color: 'white', marginTop: 10, paddingHorizontal: 20, flexShrink: 1}}>{(item.title)}</Text>
 			  </TouchableOpacity>
-		  </View>
 	  )
 	}
 
@@ -51,6 +49,8 @@ export default function TemporadaScreen({ navigation }) {
 				  renderItem={renderItem}
 				  keyExtractor={(item) => uuid()} 
 				  numColumns={2}
+				  removeClippedSubviews = {true}
+					maxToRenderPerBatch = {10}
 				  showsVerticalScrollIndicator = {false}>
 			  </FlatList>
 			  </View>
