@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import { View, Text, Image, TouchableOpacity, SafeAreaView, FlatList, renderItem, Button } from 'react-native';
 /*import { useEffect } from 'react/cjs/react.production.min';*/
 import { v4 as uuid } from 'uuid';
-import AppLoading from 'expo-app-loading';
 
 export default function MainScreen({ navigation }) {
 
