@@ -7,25 +7,7 @@ import AppLoading from 'expo-app-loading';
 
 export default function MainScreen({ navigation }) {
 
-
-	const url = "https://jikan1.p.rapidapi.com/season/later";
-
-	const [mangas, setMangas] = useState([])
-
-	useEffect(() => {
-		fetch(url, {
-			method: "GET",
-			headers: {
-				"Accept": "aplication/json"
-			}
-		})
-			.then(response => response.json())
-			.then(data => { setMangas(data.results) })
-	}, [])
-
-
-
-	/*const [isLoading] = useState(true);
+	const [isLoading] = useState(true);
   	const [mangas, setMangas] = useState([]);
 
 	  useEffect(() => {
@@ -42,7 +24,7 @@ export default function MainScreen({ navigation }) {
 		.catch(err => {
 			console.error(err);
 		});
-	  });*/
+	  });
 
 
 	  const renderItem = ({item}) => {
@@ -71,7 +53,6 @@ export default function MainScreen({ navigation }) {
 					numColumns={2}
 					removeClippedSubviews = {true}
 					maxToRenderPerBatch = {10}
-					initialNumToRender = {2}
 					showsVerticalScrollIndicator = {false}>
                 </FlatList>
 				</View>
